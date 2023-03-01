@@ -13,6 +13,12 @@ import os
 import json
 from collections import Counter,defaultdict
 
+import matplotlib
+matplotlib.use('Agg')
+
+import matplotlib.pyplot as plt
+import numpy as np
+
 # open the input path
 with open(args.input_path) as f:
     counts = json.load(f)
@@ -26,3 +32,11 @@ if args.percent:
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
 for k,v in items:
     print(k,':',v)
+
+# create bar graph
+graphItems = sorted(items, key = lambda x : x[1], reverse = True)[:10]
+        #[:10] returns first ten items
+
+graph_x, graph_y = [*zip(*graphItems)]
+plt.bar(graph_x, graph_y, width = 1)
+plt.savefig('graph.png')
