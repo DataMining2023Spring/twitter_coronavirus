@@ -41,5 +41,9 @@ graph_x, graph_y = [*zip(*graphItems)]
 plt.bar(graph_x, graph_y, width = 1)
 
 x_label = "Language" if args.input_path == "reduced.lang" else  "Country" if args.input_path == "reduced.country" else ""
+key = args.key
+title = "Times the hashtag "+key+" was used in each "+x_label
 plt.xlabel(x_label)
-plt.savefig('graph.png')
+plt.ylabel("Count")
+plt.title(title)
+plt.savefig(x_label+"."+key+'.graph.png')
