@@ -39,4 +39,7 @@ graphItems = sorted(items, key = lambda x : x[1], reverse = True)[:10]
 
 graph_x, graph_y = [*zip(*graphItems)]
 plt.bar(graph_x, graph_y, width = 1)
+
+x_label = "Language" if args.input_path == "reduced.lang" else  "Country" if args.input_path == "reduced.country" else ""
+plt.xlabel("")
 plt.savefig('graph.png')
