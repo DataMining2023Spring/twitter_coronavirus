@@ -21,7 +21,8 @@ you will have some very heavy work loads ahead of you.
 
 ## Results
 
-<img src=Country.#coronavirus.graph.png width=50% />
+![Image 1]
+(https://raw.githubusercontent.com/DataMining2023Spring/twitter_coronavirus/blob/master/Country.%23coronavirus.graph.png)
 <img src=Country.#코로나바이러스.graph.png width=50% />
 <img src=Language.#coronavirus.graph.png width=50% />
 <img src=Language.#코로나바이러스.graph.png width=50% />
