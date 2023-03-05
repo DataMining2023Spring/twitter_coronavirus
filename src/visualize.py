@@ -44,7 +44,7 @@ for x in graph_x:
     x_val.append(x)
 for y in graph_y:
     y_val.append(y)
-plt.bar(x, y, width = .7)
+plt.bar(x_val, y_val, width = .7)
 
 x_label = "Language" if args.input_path == "reduced.lang" else  "Country" if args.input_path == "reduced.country" else ""
 key = args.key
