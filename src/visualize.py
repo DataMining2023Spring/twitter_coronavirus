@@ -34,7 +34,7 @@ for k,v in items:
     print(k,':',v)
 
 # create bar graph
-graphItems = sorted(items, key = lambda x : x[1])[:10]
+graphItems = items[:10]
         #[:10] returns first ten items
 
 graph_x, graph_y = [*zip(*graphItems)]
