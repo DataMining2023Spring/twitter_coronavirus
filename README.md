@@ -20,7 +20,7 @@ you will have some very heavy work loads ahead of you.
 1. use the MapReduce divide-and-conquer paradigm to create parallel code
 
 ## Results
-We were able to output four bar plots as .png files.
+We were able to output four bar plots as .png files using the visualize.py file in the src directory. 
 
 Number of tweets per Country including the hashtag '#coronavirus'
 ![Image 1](https://github.com/DataMining2023Spring/twitter_coronavirus/blob/master/Country.%23coronavirus.graph.png)
