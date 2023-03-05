@@ -19,6 +19,13 @@ you will have some very heavy work loads ahead of you.
 1. work with multilingual text
 1. use the MapReduce divide-and-conquer paradigm to create parallel code
 
+## Results
+
+<img src=Country.#coronavirus.graph.png width=50% />
+<img src=Country.#코로나바이러스.graph.png width=50% />
+<img src=Language.#coronavirus.graph.png width=50% />
+<img src=Language.#코로나바이러스.graph.png width=50% />
+
 ## Background
 
 Approximately 500 million tweets are sent everyday.
