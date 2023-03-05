@@ -20,11 +20,15 @@ you will have some very heavy work loads ahead of you.
 1. use the MapReduce divide-and-conquer paradigm to create parallel code
 
 ## Results
+We were able to output four bar plots as .png files.
 
+Number of tweets per Country including the hashtag '#coronavirus'
 ![Image 1](https://github.com/DataMining2023Spring/twitter_coronavirus/blob/master/Country.%23coronavirus.graph.png)
-<img src=Country.#코로나바이러스.graph.png width=50% />
-<img src=Language.#coronavirus.graph.png width=50% />
-<img src=Language.#코로나바이러스.graph.png width=50% />
+![Image 2](https://github.com/DataMining2023Spring/twitter_coronavirus/blob/master/Country.%23%EC%BD%94%EB%A1%9C%EB%82%98%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4.graph.png)
+
+Number of tweets per Language inlcuding the hashtag '#코로나바이러스'
+![Image 3](https://github.com/DataMining2023Spring/twitter_coronavirus/blob/master/Language.%23coronavirus.graph.png)
+![Image 4](https://github.com/DataMining2023Spring/twitter_coronavirus/blob/master/Language.%23%EC%BD%94%EB%A1%9C%EB%82%98%EB%B0%94%EC%9D%B4%EB%9F%AC%EC%8A%A4.graph.png)
 
 ## Background
 
