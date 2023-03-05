@@ -39,11 +39,13 @@ graphItems = sorted(sorted(counts[args.key].items(), key=lambda item: (item[1],i
 
 graph_x, graph_y = [*zip(*graphItems)]
 plt.bar(graph_x, graph_y, width = 1)
+print(graph_x, graph_y)
 
 x_label = "Language" if args.input_path == "reduced.lang" else  "Country" if args.input_path == "reduced.country" else ""
 key = args.key
 title = 'Number of times "' +key+'" was used in each '+x_label
 plt.xlabel(x_label)
+plt.xticks(range(len(graph_x)), graph_x)
 plt.ylabel("Count")
 plt.title(title)
 plt.savefig(x_label+"."+key+'.graph.png')
