@@ -34,7 +34,7 @@ for k,v in items:
     print(k,':',v)
 
 # create bar graph
-graphItems = sorted(items[:10], key=lambda x: x[1])
+graphItems = sorted(items[:10], reverse=True)
         #[:10] returns first ten items
 
 graph_x, graph_y = [*zip(*graphItems)]
@@ -42,7 +42,7 @@ plt.bar(graph_x, graph_y, width = 1)
 
 x_label = "Language" if args.input_path == "reduced.lang" else  "Country" if args.input_path == "reduced.country" else ""
 key = args.key
-title = "Times the hashtag "+key+" was used in each "+x_label
+title = 'Number of times "' +key+'" was used in each '+x_label
 plt.xlabel(x_label)
 plt.ylabel("Count")
 plt.title(title)
