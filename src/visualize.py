@@ -38,14 +38,8 @@ graphItems = sorted(sorted(counts[args.key].items(), key=lambda item: (item[1],i
         #[:10] returns first ten items
 
 graph_x, graph_y = [*zip(*graphItems)]
-x_val = []
-y_val = []
-for x in graph_x:
-    x_val.append(x)
-for y in graph_y:
-    y_val.append(y)
-print(x_val,y_val)
-plt.bar(x_val, y_val)
+plt.bar(graph_x, graph_y)
+plt.xticks(range(len(graph_x)), graph_x)
 
 x_label = "Language" if args.input_path == "reduced.lang" else  "Country" if args.input_path == "reduced.country" else ""
 key = args.key
