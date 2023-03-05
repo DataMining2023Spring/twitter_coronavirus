@@ -37,11 +37,12 @@ for k,v in items:
 graphItems = sorted(sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)[:10], key=lambda x: x[1])
         #[:10] returns first ten items
 
+#plot x-axis and y-axis
 graph_x, graph_y = [*zip(*graphItems)]
-plt.bar(list(range(len(graph_x))), graph_y, data=graphItems)
-plt.xticks(range(len(graph_x)),graph_x)
-
+plt.bar(list(range(len(graph_x))), graph_y, data=graphItems) #prevents x-axis from being put in alphabetical order
 plt.xticks(range(len(graph_x)), graph_x)
+
+#add axis labels and title
 x_label = "Language" if args.input_path == "reduced.lang" else  "Country" if args.input_path == "reduced.country" else ""
 key = args.key
 title = 'Number of times "' +key+'" was used in each '+x_label
