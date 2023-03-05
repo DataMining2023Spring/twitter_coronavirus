@@ -50,7 +50,6 @@ x_label = "Language" if args.input_path == "reduced.lang" else  "Country" if arg
 key = args.key
 title = 'Number of times "' +key+'" was used in each '+x_label
 plt.xlabel(x_label)
-plt.xticks(range(len(graph_x)), graph_x)
 plt.ylabel("Count")
 plt.title(title)
 plt.savefig(x_label+"."+key+'.graph.png')
