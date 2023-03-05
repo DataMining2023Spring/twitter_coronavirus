@@ -38,7 +38,7 @@ graphItems = sorted(sorted(counts[args.key].items(), key=lambda item: (item[1],i
         #[:10] returns first ten items
 
 graph_x, graph_y = [*zip(*graphItems)]
-plt.bar(range(len(graph_x)), graph_y, data=graphItems)
+plt.bar(list(range(len(graph_x))), graph_y, data=graphItems)
 plt.xticks(range(len(graph_x)),graph_x)
 
 plt.xticks(range(len(graph_x)), graph_x)
