@@ -180,14 +180,3 @@ Complete the following tasks:
     You must edit the `README.md` file to provide a brief explanation of your results.
     This explanation should be suitable for a future employer to look at while they are interviewing you to get a rough idea of what you accomplished.
     (And you should tell them about this in your interviews!)
-
-## Submission
-
-Upload a link to you github repository on sakai.
-I will look at your code and visualization to determine your grade.
-
-Notice that we are not using CI to grade this assignment.
-That's because you can get slightly different numbers depending on some of the design choices you make in your code.
-For example, should the term `corona` count tweets that contain `coronavirus` as well as tweets that contain just `corona`?
-These are relatively insignificant decisions.
-I'm more concerned with your ability to write a shell script and use `nohup`, `&`, and other process control tools effectively.
